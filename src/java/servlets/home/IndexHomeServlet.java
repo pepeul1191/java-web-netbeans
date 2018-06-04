@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "IndexHomeServlet", urlPatterns = {"/"})
 public class IndexHomeServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
-        request.setAttribute("name", "Hussein Terek");
-        request.getRequestDispatcher("home/index.jsp").forward(request, response);
-    }
+  @Override
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+    request.setAttribute("name", "Hussein Terek");
+    request.getRequestDispatcher("home/index.jsp").forward(request, response);
+  }
 }

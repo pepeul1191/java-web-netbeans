@@ -1,12 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <%=request.getAttribute("name")%>
-    </body>
-</html>
+<jsp:include page="../partials/blank_header.jsp">
+  <jsp:param name="title" value="Main title" />
+</jsp:include>
+<%=request.getAttribute("name")%>
+<jsp:include page="../partials/blank_footer.jsp">
+  <jsp:param name="title" value="Main title" />
+</jsp:include>
