@@ -20,4 +20,4 @@ Gemfile.lock
 db/ubicaciones.db
 build
 
-/web/bower_components
+/web/resources/bower_components
