@@ -12,5 +12,5 @@
     var CSRF = "";
   </script>
 </head>
-<body class="container">
+<body class="container" style="background:white;">
   <!--BASE_URL: ${pageContext.request.contextPath} <br>-->

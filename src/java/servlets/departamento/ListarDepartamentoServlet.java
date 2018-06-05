@@ -3,6 +3,8 @@ package servlets.departamento;
 import daos.DepartamentoDao;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,8 +16,9 @@ public class ListarDepartamentoServlet extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
           throws ServletException, IOException {
       String rpta = "";
-      DepartamentoDao departamentoDao = new DepartamentoDao();
+      DepartamentoDao departamentoDao;
       try {
+        departamentoDao = new DepartamentoDao();
         rpta = departamentoDao.listar();
       }catch (Exception e) {
         String[] error = {"Se ha producido un error en  listar los departamentos registrados", e.toString()};

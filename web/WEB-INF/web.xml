@@ -10,6 +10,10 @@
         <servlet-class>servlets.departamento.ListarDepartamentoServlet</servlet-class>
     </servlet>
     <!-- SERVLETS MAPPING -->
+    <servlet>
+        <servlet-name>GuardarDepartamentoServlet</servlet-name>
+        <servlet-class>servlets.departamento.GuardarDepartamentoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>IndexHomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -19,6 +23,10 @@
         <url-pattern>/departamento/listar</url-pattern>
     </servlet-mapping>
     <!-- OTRAS CONFIGURACIONES -->
+    <servlet-mapping>
+        <servlet-name>GuardarDepartamentoServlet</servlet-name>
+        <url-pattern>/departamento/guardar</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

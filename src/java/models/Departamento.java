@@ -12,7 +12,7 @@ public class Departamento implements Serializable {
   @DatabaseField(canBeNull = false, columnName = "nombre")
   private String nombre;
 
-  Departamento(){
+  public Departamento(){
   }
 
   public int getId() { 
