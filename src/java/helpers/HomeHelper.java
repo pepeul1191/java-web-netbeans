@@ -15,14 +15,7 @@ public class HomeHelper extends ApplicationHelper{
         });
       case "produccion":
         return this.loadCSS(new String[] {
-          "bower_components/jquery/dist/jquery.min",
-          "bower_components/bootstrap/dist/js/bootstrap.min",
-          "bower_components/underscore/underscore-min",
-          "bower_components/backbone/backbone-min",
-          "bower_components/handlebars/handlebars.min",
-          "bower_components/swp-backbone/layouts/application",
-          "bower_components/swp-backbone/views/table",
-          "bower_components/swp-backbone/views/modal"
+          "dist/home.min"
         });
       default:
         return this.loadCSS(new String[] {});
@@ -34,7 +27,13 @@ public class HomeHelper extends ApplicationHelper{
       case "desarrollo":
         return this.loadJS(new String[] {
           "bower_components/jquery/dist/jquery.min",
-				  "bower_components/bootstrap/dist/js/bootstrap.min",
+          "bower_components/bootstrap/dist/js/bootstrap.min",
+          "bower_components/underscore/underscore-min",
+          "bower_components/backbone/backbone-min",
+          "bower_components/handlebars/handlebars.min",
+          "bower_components/swp-backbone/layouts/application",
+          "bower_components/swp-backbone/views/table",
+          "bower_components/swp-backbone/views/modal"
         });
       case "produccion":
         return this.loadJS(new String[] {

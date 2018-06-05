@@ -3,7 +3,6 @@
   <jsp:param name="title" value="Main title" />
 </jsp:include>
 
-
 <jsp:include page="../partials/blank_footer.jsp">
   <jsp:param name="title" value="Main title" />
 </jsp:include>
