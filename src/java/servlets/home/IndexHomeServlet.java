@@ -20,6 +20,9 @@ public class IndexHomeServlet extends HttpServlet {
     request.setAttribute("name", "Hussein Teresk");
     request.setAttribute("css", this.helper.indexCSS());
     request.setAttribute("js", this.helper.indexJS());
+    request.setAttribute("base_url", this.helper.getConfValue("base_url"));
+    request.setAttribute("static_url", this.helper.getConfValue("static_url"));
+    request.setAttribute("title", "Home");
     request.getRequestDispatcher("home/index.jsp").forward(request, response);
   }
 }

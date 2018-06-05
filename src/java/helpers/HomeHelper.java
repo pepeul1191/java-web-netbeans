@@ -10,8 +10,8 @@ public class HomeHelper extends ApplicationHelper{
           "bower_components/swp-backbone/assets/css/constants",
           "bower_components/swp-backbone/assets/css/dashboard",
           "bower_components/swp-backbone/assets/css/table",
-          "assets/css/constants",
-          "assets/css/styles"
+          "css/constants",
+          "css/styles"
         });
       case "produccion":
         return this.loadCSS(new String[] {
@@ -30,10 +30,9 @@ public class HomeHelper extends ApplicationHelper{
           "bower_components/bootstrap/dist/js/bootstrap.min",
           "bower_components/underscore/underscore-min",
           "bower_components/backbone/backbone-min",
-          "bower_components/handlebars/handlebars.min",
-          "bower_components/swp-backbone/layouts/application",
           "bower_components/swp-backbone/views/table",
-          "bower_components/swp-backbone/views/modal"
+          "bower_components/swp-backbone/views/modal",
+          "js/home"
         });
       case "produccion":
         return this.loadJS(new String[] {
