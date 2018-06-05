@@ -21,3 +21,4 @@ db/ubicaciones.db
 build
 
 /web/resources/bower_components
+/dist/

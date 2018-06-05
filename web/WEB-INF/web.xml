@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- SERVLETS -->
     <servlet>
-      <servlet-name>ListarDepartamentoServlet</servlet-name>
-      <servlet-class>servlets.departamento.ListarDepartamentoServlet</servlet-class>
+        <servlet-name>IndexHomeServlet</servlet-name>
+        <servlet-class>servlets.home.IndexHomeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarDepartamentoServlet</servlet-name>
+        <servlet-class>servlets.departamento.ListarDepartamentoServlet</servlet-class>
+    </servlet>
+    <!-- SERVLETS MAPPING -->
     <servlet-mapping>
-      <servlet-name>ListarDepartamentoServlet</servlet-name>
-      <url-pattern>/departamento/listar</url-pattern>
+        <servlet-name>IndexHomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarDepartamentoServlet</servlet-name>
+        <url-pattern>/departamento/listar</url-pattern>
+    </servlet-mapping>
+    <!-- OTRAS CONFIGURACIONES -->
     <session-config>
         <session-timeout>
             30
